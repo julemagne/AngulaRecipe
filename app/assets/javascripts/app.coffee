@@ -1,0 +1,3 @@
+angularecipe = angular.module('angularecipe',[
+  
+  ])

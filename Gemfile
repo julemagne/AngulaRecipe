@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'foreman'
 gem 'bower-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -29,6 +29,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :production, :staging do
+  gem 'rails_12factor'
+  gem 'rails_stdout_logging'
+  gem 'rails_serve_static_assets'
+end
 
 group :development, :test do
   gem 'rspec-rails'
