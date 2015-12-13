@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+
+gem 'angular-rails-templates'
 gem 'foreman'
 gem 'bower-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -36,6 +38,7 @@ group :production, :staging do
 end
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
